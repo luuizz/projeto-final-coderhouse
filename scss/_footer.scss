@@ -1,0 +1,43 @@
+footer {
+    width: 100%;
+    background-color: $blue-500;
+    padding-top: 6.7rem;
+    padding-bottom: 6.5rem;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text {
+        h3 {
+            color: $white;
+        }
+        p {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 180%;
+            color: rgba($white, $opacity-08);
+        }
+    }
+    a {
+        img {
+            max-width: 10rem;
+        }
+    }
+    @include responsive (560px) {
+        padding: 4rem 0;
+        .container {
+            flex-direction: column;
+            
+        }
+        .text {
+            margin-bottom: 4.8rem;
+            h3 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
